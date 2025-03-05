@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launchix - Plataforma de Oportunidades</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilos personalizados */
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar {
+      background-color: #003366;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .hero-section {
+      background-color: #f4f4f4;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero-section p {
+      font-size: 1.25rem;
+      color: #555;
+    }
+    .section-title {
+      border-bottom: 2px solid #003366;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .cta-button {
+      background-color: #003366;
+      color: white;
+      border-radius: 5px;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    .cta-button:hover {
+      background-color: #002244;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+    }
+    .icon-hover:hover {
+      color: #ffc107 !important;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    aside {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-store"></i> Launchix
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="emprendimiento.html"><i class="fas fa-lightbulb"></i> Emprendimiento</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#login"><i class="fas fa-user"></i> Iniciar Sesión / Registro</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <h1 data-aos="fade-up">Bienvenidos a Launchix</h1>
+    <p data-aos="fade-up">Tu Plataforma de Oportunidades para Emprendedores en Timbío</p>
+    <a href="#" class="cta-button" data-aos="fade-up">Regístrate Ahora</a>
+  </div>
+</section>
+
+<!-- Inicio -->
+<main class="container my-5">
+  <section id="inicio" class="mb-5">
+    <h2 class="section-title" data-aos="fade-right">Explora Launchix</h2>
+    <p data-aos="fade-left">En Launchix, te conectamos con un mundo de emprendedores y productos únicos en Timbío. Explora nuestra plataforma para descubrir cómo puedes vender, comprar y promover tus negocios. ¡Únete a nosotros y empieza tu viaje hacia el éxito hoy mismo!</p>
+  </section>
+
+  <!-- Características Principales -->
+  <section class="container mb-5">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <i class="fas fa-rocket feature-icon"></i>
+        <h3>Crecimiento Rápido</h3>
+        <p>Impulsa tu negocio con herramientas diseñadas para el crecimiento rápido y eficiente.</p>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <i class="fas fa-users feature-icon"></i>
+        <h3>Comunidad Activa</h3>
+        <p>Únete a una comunidad de emprendedores que comparten tus objetivos y desafíos.</p>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <i class="fas fa-shield-alt feature-icon"></i>
+        <h3>Seguridad y Confianza</h3>
+        <p>Tu información está segura con nosotros. Priorizamos la confianza y la transparencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emprendimiento -->
+  <section id="emprendimiento" class="container my-5">
+    <h2 class="section-title" data-aos="fade-right">Emprendimiento</h2>
+    <p data-aos="fade-left">En Launchix, brindamos las herramientas y el soporte necesario para ayudar a los emprendedores a hacer crecer su negocio. Descubre historias inspiradoras, videos educativos y cursos diseñados para impulsar tu éxito.</p>
+
+    <!-- Historias de Éxito -->
+    <div class="row mb-5">
+      <h3 class="mb-4" data-aos="fade-right">Historias de Éxito</h3>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/380x200" alt="Historia 1" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Historia de Juan Pérez</h5>
+            <p class="card-text">Juan Pérez comenzó su negocio con Launchix y ahora vende sus productos en todo el país.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/380x200" alt="Historia 2" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Historia de María López</h5>
+            <p class="card-text">María López utilizó nuestras herramientas de marketing para aumentar sus ventas un 200%.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/380x200" alt="Historia 3" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Historia de Carlos Gómez</h5>
+            <p class="card-text">Carlos Gómez encontró en Launchix la plataforma ideal para expandir su negocio local.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Videos Educativos -->
+    <div class="row mb-5">
+      <h3 class="mb-4" data-aos="fade-right">Videos Educativos</h3>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Cómo Empezar tu Negocio</h5>
+            <p class="card-text">Aprende los pasos básicos para iniciar tu propio negocio con éxito.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Estrategias de Marketing Digital</h5>
+            <p class="card-text">Descubre cómo utilizar el marketing digital para impulsar tu negocio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Gestión Financiera para Emprendedores</h5>
+            <p class="card-text">Aprende a manejar las finanzas de tu negocio de manera efectiva.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cursos -->
+    <div class="row mb-5">
+      <h3 class="mb-4" data-aos="fade-right">Cursos</h3>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/380x200" alt="Curso 1" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Curso de Emprendimiento Básico</h5>
+            <p class="card-text">Aprende los conceptos básicos para iniciar tu propio negocio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/380x200" alt="Curso 2" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Curso de Marketing Digital</h5>
+            <p class="card-text">Domina las estrategias de marketing digital para atraer más clientes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/380x200" alt="Curso 3" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Curso de Gestión Financiera</h5>
+            <p class="card-text">Mejora tus habilidades financieras para gestionar mejor tu negocio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aside -->
+  <aside data-aos="fade-left">
+    <h3>Noticias Recientes</h3>
+    <p>Mantente actualizado con las últimas noticias y tendencias en el mundo del emprendimiento.</p>
+    <ul>
+      <li><a href="#">Nueva actualización de la plataforma</a></li>
+      <li><a href="#">Evento de networking para emprendedores</a></li>
+      <li><a href="#">Consejos para mejorar tu estrategia de marketing</a></li>
+    </ul>
+    <h3>Recursos Adicionales</h3>
+    <p>Descarga nuestras guías y plantillas para ayudarte en tu camino emprendedor.</p>
+    <ul>
+      <li><a href="#">Guía de Marketing Digital</a></li>
+      <li><a href="#">Plantilla de Plan de Negocios</a></li>
+      <li><a href="#">Ebook de Finanzas para Emprendedores</a></li>
+    </ul>
+  </aside>
+
+</main>
+
+<footer class="footer text-light py-5" style="background-color: #007bff;">
+  <div class="container">
+    <!-- Sección de enlaces rápidos -->
+    <div class="row">
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase">Sobre Nosotros</h5>
+        <p class="small">Launchix es tu plataforma ideal para emprender, vender y conectar con clientes en Timbío. Nuestra misión es impulsar tu negocio al éxito.</p>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase">Enlaces Útiles</h5>
+        <ul class="list-unstyled">
+          <li><a href="#inicio" class="text-light">Inicio</a></li>
+          <li><a href="#productos" class="text-light">Productos</a></li>
+          <li><a href="#servicios" class="text-light">Servicios</a></li>
+          <li><a href="#emprendimiento" class="text-light">Emprendimiento</a></li>
+          <li><a href="#login" class="text-light">Iniciar Sesión / Registro</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase">Contáctanos</h5>
+        <p class="small mb-1"><i class="fas fa-envelope"></i> soporte@launchix.com</p>
+        <p class="small mb-1"><i class="fas fa-phone"></i> +57 320 123 4567</p>
+        <p class="small"><i class="fas fa-map-marker-alt"></i> Timbío, Cauca, Colombia</p>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase">Síguenos</h5>
+        <div class="d-flex">
+          <a href="#" class="text-light me-3 icon-hover"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" class="text-light me-3 icon-hover"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" class="text-light me-3 icon-hover"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#" class="text-light icon-hover"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea divisoria -->
+    <hr class="my-4 text-secondary">
+
+    <!-- Copyright -->
+    <div class="row">
+      <div class="col text-center">
+        <p class="small mb-0">&copy; 2024 Launchix. Todos los derechos reservados</p>
+        <p class="small mb-0">Política de Privacidad | Términos de Uso</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

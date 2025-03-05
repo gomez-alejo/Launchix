@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launchix - Plataforma de Oportunidades</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <!-- Contenedor principal de la barra de navegación -->
+  <div class="container">
+    <!-- Logo de la página -->
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-store"></i> Launchix <!-- Icono y nombre del sitio -->
+    </a>
+
+    <!-- Botón para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> <!-- Icono del botón para dispositivos móviles -->
+    </button>
+
+    <!-- Contenedor de enlaces de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Lista de enlaces de navegación -->
+      <ul class="navbar-nav me-auto">
+        <!-- Enlace a la página de inicio -->
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <!-- Enlace a la página de productos -->
+        <li class="nav-item"><a class="nav-link" href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
+        <!-- Enlace a la página de servicios -->
+        <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
+        <!-- Enlace a la página de emprendimiento -->
+        <li class="nav-item"><a class="nav-link" href="emprendimieto.html"><i class="fas fa-lightbulb"></i> Emprendimiento</a></li>
+        <!-- Enlace a la página del blog -->
+        <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <!-- Enlace a la página de preguntas frecuentes -->
+        <li class="nav-item"><a class="nav-link" href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
+      </ul>
+
+      <!-- Lista de enlaces de navegación alineados a la derecha -->
+      <ul class="navbar-nav">
+        <!-- Enlace a la página de inicio de sesión/registro -->
+        <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user"></i> Iniciar Sesión / Registro</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Sección Hero -->
+<section class="hero-section">
+  <!-- Contenedor principal de la sección Hero -->
+  <div class="container">
+    <!-- Título principal de la sección Hero -->
+    <h1 data-aos="fade-up">Bienvenidos a Launchix</h1>
+    <!-- Descripción breve de la sección Hero -->
+    <p data-aos="fade-up">Tu Plataforma de Oportunidades para Emprendedores en Timbío</p>
+    <!-- Botón de llamada a la acción -->
+    <a href="#" class="cta-button" data-aos="fade-up">Regístrate Ahora</a>
+  </div>
+</section>
+
+<!-- Inicio -->
+<!-- Contenido Principal -->
+<main class="container my-5">
+  <!-- Sección de Inicio -->
+  <section id="inicio" class="mb-5">
+    <!-- Título de la sección -->
+    <h2 class="section-title" data-aos="fade-right">Explora Launchix</h2>
+    <!-- Descripción de la sección -->
+    <p data-aos="fade-left">
+      En Launchix, te conectamos con un mundo de emprendedores y productos únicos en Timbío. Explora nuestra plataforma para descubrir cómo puedes vender, comprar y promover tus negocios. ¡Únete a nosotros y empieza tu viaje hacia el éxito hoy mismo!
+    </p>
+  </section>
+
+  <!-- Sección de Productos y Servicios -->
+  <section class="sectiontres container py-5">
+    <!-- Título de la sección con animación de entrada -->
+    <h2 class="section-title" data-aos="fade-right">Nuestros Productos y Servicios</h2>
+    <div class="row">
+      <!-- Primera tarjeta: Tienda en Línea -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <!-- Imagen representativa de la tienda en línea -->
+          <img src="https://i.pinimg.com/736x/e1/83/7b/e1837b5c08889d523ce525f24abc7d2a.jpg" alt="Tienda en Línea" class="card-img-top img-fluid">
+          <div class="card-body d-flex flex-column">
+            <!-- Título de la tarjeta -->
+            <h3 class="card-title">Tienda en Línea</h3>
+            <!-- Descripción del servicio -->
+            <p class="card-text">Crea y personaliza tu tienda en línea para llegar a una audiencia más amplia.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Segunda tarjeta: Publicación de Productos -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <!-- Imagen representativa de la publicación de productos -->
+          <img src="https://i.pinimg.com/736x/89/7f/b4/897fb4e86c2b4716049dae2720179221.jpg" alt="Publicación de Productos" class="card-img-top img-fluid">
+          <div class="card-body d-flex flex-column">
+            <!-- Título de la tarjeta -->
+            <h3 class="card-title">Publicación de Productos</h3>
+            <!-- Descripción del servicio -->
+            <p class="card-text">Lista tus productos con descripciones detalladas, fotos y videos.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Tercera tarjeta: Carrito de Compras -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <!-- Imagen representativa del carrito de compras -->
+          <img src="https://i.pinimg.com/736x/82/6f/d5/826fd53165985939be5b7e29938b3fe3.jpg" alt="Carrito de Compras" class="card-img-top img-fluid">
+          <div class="card-body d-flex flex-column">
+            <!-- Título de la tarjeta -->
+            <h3 class="card-title">Carrito de Compras</h3>
+            <!-- Descripción del servicio -->
+            <p class="card-text">Facilita las compras con un carrito de compras intuitivo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Emprendimiento -->
+  <section id="emprendimiento" class="mb-5">
+    <h2 class="section-title" data-aos="fade-right">Inicia Tu Emprendimiento</h2>
+    <p data-aos="fade-left">Brindamos las herramientas y el soporte necesario para ayudar a los emprendedores a hacer crecer su negocio. ¡Tu éxito es nuestra misión!</p>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="mb-5"> 
+    <!-- Título de la sección con animación AOS (fade-right) -->
+    <h2 class="section-title" data-aos="fade-right">Testimonios</h2>  
+    <!-- Contenedor en forma de fila para organizar los testimonios -->
+    <div class="row">  
+        <!-- Primera tarjeta de testimonio -->
+      <div class="col-md-4 mb-4" data-aos="fade-up"> <!-- Ocupa 4 columnas en pantallas medianas y mayores -->
+          <div class="card h-100"> <!-- Tarjeta con altura completa para uniformidad -->
+              <div class="card-body"> <!-- Contenido de la tarjeta -->
+                  <p>"Launchix ha sido fundamental para el crecimiento de mi negocio. ¡Gracias!"</p>
+                  <h5>- Juan Pérez</h5> <!-- Nombre del usuario que da el testimonio -->
+              </div>
+          </div>
+        </div>
+      <!-- Repetir -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <div class="card-body">
+            <p>"La plataforma es muy fácil de usar y ha aumentado mis ventas significativamente."</p>
+            <h5>- María López</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <div class="card-body">
+            <p>"Excelente servicio al cliente y herramientas útiles para emprendedores."</p>
+            <h5>- Carlos Gómez</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección del Blog -->
+  <section id="blog" class="mb-5">
+    <!-- Título de la sección con animación de entrada -->
+    <h2 class="section-title" data-aos="fade-right">Blog</h2>
+    <div class="row">
+      <!-- Primera tarjeta: Cómo empezar tu propio negocio -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <!-- Imagen representativa del artículo -->
+          <img src="https://i.pinimg.com/736x/77/d4/30/77d430a161a18188f02a884573683eb2.jpg" alt="Blog Post 1" class="card-img-top img-fluid">
+          <div class="card-body">
+            <!-- Título del artículo -->
+            <h5 class="card-title">Cómo empezar tu propio negocio</h5>
+            <!-- Breve descripción del contenido -->
+            <p class="card-text">Consejos y estrategias para lanzar tu emprendimiento.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Segunda tarjeta: La importancia del marketing digital -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <!-- Imagen representativa del artículo -->
+          <img src="https://i.pinimg.com/736x/a3/5c/b5/a35cb5b1d317adcd7a18c8b098883168.jpg" alt="Blog Post 2" class="card-img-top img-fluid">
+          <div class="card-body">
+            <!-- Título del artículo -->
+            <h5 class="card-title">La importancia del marketing digital</h5>
+            <!-- Breve descripción del contenido -->
+            <p class="card-text">Descubre cómo el marketing digital puede impulsar tu negocio.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Tercera tarjeta: Historias de éxito de emprendedores -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100">
+          <!-- Imagen representativa del artículo -->
+          <img src="https://i.pinimg.com/736x/48/82/01/488201e10a9b11a5eaa764efe8e26fae.jpg" alt="Blog Post 3" class="card-img-top img-fluid">
+          <div class="card-body">
+            <!-- Título del artículo -->
+            <h5 class="card-title">Historias de éxito de emprendedores</h5>
+            <!-- Breve descripción del contenido -->
+            <p class="card-text">Inspírate con las historias de otros emprendedores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección del Equipo -->
+  <section id="equipo" class="mb-5">
+    <!-- Título de la sección con animación de entrada -->
+    <h2 class="section-title" data-aos="fade-right">Nuestro Equipo</h2>
+    <div class="row">
+      <!-- Primera tarjeta: Juan Pérez - CEO & Fundador -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card text-center h-100">
+          <!-- Imagen del miembro del equipo con diseño circular -->
+          <img src="https://i.pinimg.com/736x/49/54/ae/4954ae32ae693128a1e85ede8ab8288d.jpg" alt="Team Member 1" class="card-img-top img-fluid rounded-circle mx-auto mt-3">
+          <div class="card-body">
+            <!-- Nombre del miembro del equipo -->
+            <h5 class="card-title">Alejandro Gómez</h5>
+            <!-- Cargo dentro de la empresa -->
+            <p class="card-text">CEO & Fundador</p>
+          </div>
+        </div>
+      </div>
+      <!-- Repetir el procedimiento para los demás miembros del equipo -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card text-center h-100">
+          <img src="https://i.pinimg.com/736x/4e/55/b8/4e55b89add9b83b4dc1ea16af44ae744.jpg" alt="Team Member 2" class="card-img-top img-fluid rounded-circle mx-auto mt-3">
+          <div class="card-body">
+            <h5 class="card-title">stefany viveros</h5>
+            <p class="card-text">Directora de Marketing</p>
+          </div>
+        </div>
+      </div>
+      <!-- Repetir -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card text-center h-100">
+          <img src="https://i.pinimg.com/736x/30/74/fd/3074fd1510f56394ca662e4169da23d0.jpg" alt="Team Member 3" class="card-img-top img-fluid rounded-circle mx-auto mt-3" class="img">
+          <div class="card-body">
+            <h5 class="card-title">manzano manzano</h5>
+            <p class="card-text">Desarrollador Principal</p>
+          </div>
+        </div>
+      </div>
+      <!-- Repetir -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card text-center h-100">
+          <img src="https://i.pinimg.com/736x/2e/26/50/2e2650de2b1e66917a3ca3ca502279e0.jpg" alt="Team Member 4" class="card-img-top img-fluid rounded-circle mx-auto mt-3">
+          <div class="card-body">
+            <h5 class="card-title">julian dominguez</h5>
+            <p class="card-text">Diseñador UX/UI</p>
+          </div>
+        </div>
+      </div>
+      <!-- Repetir -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card text-center h-100">
+          <img src="https://i.pinimg.com/736x/fe/eb/5c/feeb5c1958bc21536ae2c4d02964483f.jpg" alt="Team Member 5" class="card-img-top img-fluid rounded-circle mx-auto mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Luis enrique</h5>
+            <p class="card-text">Especialista en SEO</p>
+          </div>
+        </div>
+      </div>
+      <!-- Repetir -->
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card text-center h-100">
+          <img src="https://i.pinimg.com/736x/9d/4d/ce/9d4dcea8adb25678a27702ac93eb6e91.jpg" alt="Team Member 6" class="card-img-top img-fluid rounded-circle mx-auto mt-3">
+          <div class="card-body">
+            <h5 class="card-title">guillermo gomez </h5>
+            <p class="card-text">Gerente de Producto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección de Preguntas Frecuentes (FAQ) -->
+  <section id="faq" class="mb-5">
+    <!-- Título de la sección con animación -->
+    <h2 class="section-title" data-aos="fade-right" >Preguntas Frecuentes</h2>
+    <div class="accordion" id="faqAccordion">
+      <!-- Primera pregunta: Registro en Launchix -->
+      <div class="accordion-item" data-aos="fade-up">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            ¿Cómo puedo registrarme en Launchix?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Registrarse en Launchix es fácil. Simplemente haz clic en "Iniciar Sesión / Registro" y sigue las instrucciones.
+          </div>
+        </div>
+      </div>
+      <!-- Repetir el procedimiento para las siguientes preguntas -->
+      <div class="accordion-item" data-aos="fade-up">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            ¿Qué métodos de pago aceptan?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Aceptamos tarjetas de crédito, débito, transferencias y más.
+          </div>
+        </div>
+      </div>
+      <!-- Repetir -->
+      <div class="accordion-item" data-aos="fade-up">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ¿Cómo puedo contactar al soporte técnico?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Puedes contactarnos a través de soporte@launchix.com o llamando al +57 320 123 4567.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aside -->
+  <aside data-aos="fade-left">
+    <h3>Noticias Recientes</h3>
+    <p>Mantente actualizado con las últimas noticias y tendencias en el mundo del emprendimiento.</p>
+    <ul>
+      <li><a href="#">Nueva actualización de la plataforma</a></li>
+      <li><a href="#">Evento de networking para emprendedores</a></li>
+      <li><a href="#">Consejos para mejorar tu estrategia de marketing</a></li>
+    </ul>
+  </aside>
+
+</main>
+
+<footer class="footer text-light py-5">
+  <div class="container">
+    <!-- Sección de enlaces rápidos -->
+    <div class="row">
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase">Sobre Nosotros</h5>
+        <p class="small">Launchix es tu plataforma ideal para emprender, vender y conectar con clientes en Timbío. Nuestra misión es impulsar tu negocio al éxito.</p>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase">Enlaces Útiles</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light">Inicio</a></li>
+          <li><a href="productos.html" class="text-light">Productos</a></li>
+          <li><a href="servicios.html" class="text-light">Servicios</a></li>
+          <li><a href="emprendimiento.html" class="text-light">Emprendimiento</a></li>
+          <li><a href="blog.html" class="text-light">Blog</a></li>
+          <li><a href="faq.html" class="text-light">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase">Contáctanos</h5>
+        <p class="small mb-1"><i class="fas fa-envelope"></i> soporte@launchix.com</p>
+        <p class="small mb-1"><i class="fas fa-phone"></i> +57 320 123 4567</p>
+        <p class="small"><i class="fas fa-map-marker-alt"></i> Timbío, Cauca, Colombia</p>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase">Síguenos</h5>
+        <div class="d-flex">
+          <a href="#" class="text-light me-3 icon-hover"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" class="text-light me-3 icon-hover"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" class="text-light me-3 icon-hover"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#" class="text-light icon-hover"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea divisoria -->
+    <hr class="my-4 text-secondary">
+
+    <!-- Copyright -->
+    <div class="row">
+      <div class="col text-center">
+        <p class="small mb-0">&copy; 2024 Launchix. Todos los derechos reservados</p>
+        <p class="small mb-0">Política de Privacidad | Términos de Uso</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

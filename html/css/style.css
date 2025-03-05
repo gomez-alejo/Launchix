@@ -1,0 +1,161 @@
+/* Estilo general del cuerpo de la página */
+body {
+  background: #C9D6FF; /* Color de fondo sólido */
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); /* Degradado compatible con WebKit */
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* Degradado estándar */
+  font-family: Arial, sans-serif; /* Fuente predeterminada */
+}
+
+/* Estilo de los párrafos */
+p {
+  font-size: 25px; /* Tamaño de la fuente */
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  padding: 1rem 1.5rem; /* Espacio interno */
+  background-color: #007bff; /* Color de fondo */
+}
+
+/* Estilo del logo en la barra de navegación */
+.navbar-brand {
+  font-size: 1.6rem; /* Tamaño de la fuente */
+  color: white; /* Color del texto */
+}
+
+/* Estilo de los enlaces de navegación */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem; /* Espacio interno */
+  color: white; /* Color del texto */
+}
+
+/* Estilo de los enlaces de navegación al pasar el cursor */
+.navbar-nav .nav-link:hover {
+  background-color: #0056b3; /* Cambia el color de fondo */
+  border-radius: 5px; /* Redondea las esquinas */
+}
+
+/* Estilo del icono del toggler de navegación */
+.navbar-toggler-icon {
+  background-color: white; /* Color de fondo del icono */
+}
+
+/* Estilo de la sección hero */
+.hero-section {
+  position: relative; /* Permite posicionar elementos hijos de manera absoluta */
+  color: white; /* Color del texto */
+  text-align: center; /* Centra el texto */
+  padding: 150px 20px; /* Espacio interno */
+  overflow: hidden; /* Oculta el contenido que se desborde */
+}
+
+/* Pseudo-elemento para el fondo de la sección hero */
+.hero-section::before {
+  content: ""; /* Necesario para mostrar el pseudo-elemento */
+  position: absolute; /* Posición absoluta */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #002244;
+  background-attachment: fixed; /* La imagen se mantiene fija al hacer scroll */
+  filter: blur(5px); /* Aplica un efecto de desenfoque */
+  z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+/* Estilo del título en la sección hero */
+.hero-section h1 {
+  font-size: 3rem; /* Tamaño de la fuente */
+  font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilo de los párrafos en la sección hero */
+.hero-section p {
+  font-size: 1.2rem; /* Tamaño de la fuente */
+  margin: 20px 0; /* Espacio alrededor del párrafo */
+}
+
+/* Estilo de los títulos de sección */
+.section-title {
+  font-size: 2rem; /* Tamaño de la fuente */
+  font-weight: bold; /* Peso de la fuente */
+  margin-bottom: 1.5rem; /* Espacio debajo del título */
+}
+
+/* Estilo del cuerpo de las tarjetas */
+.card-body {
+  display: flex; /* Usa flexbox para organizar el contenido */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+/* Estilo del texto dentro de las tarjetas */
+.card-text {
+  font-size: 1rem; /* Tamaño de la fuente */
+  color: #555; /* Color del texto */
+}
+
+/* Estilo de las tarjetas */
+.card {
+  border: none; /* Elimina el borde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para dar profundidad */
+  transition: transform 0.3s; /* Añade una transición suave */
+}
+
+/* Estilo de las tarjetas al pasar el cursor */
+.card:hover {
+  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+}
+
+/* Estilo del botón de llamada a la acción */
+.cta-button {
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  border-radius: 5px; /* Redondea las esquinas */
+  padding: 10px 20px; /* Espacio interno */
+  text-decoration: none; /* Elimina el subrayado del texto */
+}
+
+/* Estilo del botón al pasar el cursor */
+.cta-button:hover {
+  background-color: #002244; /* Cambia el color de fondo */
+}
+/*estilo img Team*/
+.card-img-top {
+  width: 400px !important;
+  height: 400px !important;
+  object-fit: cover; /* Para mantener la proporción y evitar deformaciones */
+}
+/* Estilo del aside */
+aside {
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 20px; /* Espacio interno */
+  border-radius: 10px; /* Redondea las esquinas */
+  margin-top: 20px; /* Espacio encima del aside */
+}
+
+/* Estilo del footer */
+footer {
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+}
+
+/* Estilo de los enlaces en el footer */
+.footer a {
+  transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilo de los iconos en el footer */
+.footer .icon-hover i {
+  transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilo de los iconos al pasar el cursor */
+.footer .icon-hover:hover i {
+  color: #090908; /* Cambia el color del icono */
+  transform: scale(1.1); /* Aumenta el tamaño del icono */
+}
+
+
+
