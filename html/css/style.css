@@ -4,29 +4,30 @@ body {
   background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); /* Degradado compatible con WebKit */
   background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* Degradado estándar */
   font-family: Arial, sans-serif; /* Fuente predeterminada */
+  font-size: 14px; /* Reducir el tamaño de la fuente base */
 }
 
 /* Estilo de los párrafos */
 p {
-  font-size: 25px; /* Tamaño de la fuente */
+  font-size: 16px; /* Reducir el tamaño de la fuente */
 }
 
 /* Estilo de la barra de navegación */
 .navbar {
-  font-size: 1.1rem; /* Tamaño de la fuente */
-  padding: 1rem 1.5rem; /* Espacio interno */
+  font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+  padding: 0.5rem 1rem; /* Reducir el padding */
   background-color: #007bff; /* Color de fondo */
 }
 
 /* Estilo del logo en la barra de navegación */
 .navbar-brand {
-  font-size: 1.6rem; /* Tamaño de la fuente */
+  font-size: 1.2rem; /* Reducir el tamaño de la fuente */
   color: white; /* Color del texto */
 }
 
 /* Estilo de los enlaces de navegación */
 .navbar-nav .nav-link {
-  padding: 0.5rem 1rem; /* Espacio interno */
+  padding: 0.3rem 0.8rem; /* Reducir el padding */
   color: white; /* Color del texto */
 }
 
@@ -46,7 +47,7 @@ p {
   position: relative; /* Permite posicionar elementos hijos de manera absoluta */
   color: white; /* Color del texto */
   text-align: center; /* Centra el texto */
-  padding: 150px 20px; /* Espacio interno */
+  padding: 100px 20px; /* Reducir el padding */
   overflow: hidden; /* Oculta el contenido que se desborde */
 }
 
@@ -66,19 +67,19 @@ p {
 
 /* Estilo del título en la sección hero */
 .hero-section h1 {
-  font-size: 3rem; /* Tamaño de la fuente */
+  font-size: 2.5rem; /* Reducir el tamaño de la fuente */
   font-weight: bold; /* Peso de la fuente */
 }
 
 /* Estilo de los párrafos en la sección hero */
 .hero-section p {
-  font-size: 1.2rem; /* Tamaño de la fuente */
+  font-size: 1rem; /* Reducir el tamaño de la fuente */
   margin: 20px 0; /* Espacio alrededor del párrafo */
 }
 
 /* Estilo de los títulos de sección */
 .section-title {
-  font-size: 2rem; /* Tamaño de la fuente */
+  font-size: 1.8rem; /* Reducir el tamaño de la fuente */
   font-weight: bold; /* Peso de la fuente */
   margin-bottom: 1.5rem; /* Espacio debajo del título */
 }
@@ -123,8 +124,8 @@ p {
 }
 /*estilo img Team*/
 .card-img-top {
-  width: 400px !important;
-  height: 400px !important;
+  width: 300px !important;
+  height: 300px !important;
   object-fit: cover; /* Para mantener la proporción y evitar deformaciones */
 }
 /* Estilo del aside */
