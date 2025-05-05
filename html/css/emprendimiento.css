@@ -1,78 +1,45 @@
-    /* Estilos personalizados */
-    body {
-      font-family: 'Arial', sans-serif;
-    }
-    .navbar {
-      background-color: #003366;
-    }
-    .navbar-brand, .nav-link {
-      color: white !important;
-    }
-    .hero-section {
-      background-color: #f4f4f4;
-      padding: 80px 0;
-      text-align: center;
-    }
-    .hero-section h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    .hero-section p {
-      font-size: 1.25rem;
-      color: #555;
-    }
-    .section-title {
-      border-bottom: 2px solid #003366;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-    .card {
-      border: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-    }
-    .cta-button {
-      background-color: #003366;
-      color: white;
-      border-radius: 5px;
-      padding: 10px 20px;
-      text-decoration: none;
-    }
-    .cta-button:hover {
-      background-color: #002244;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-    }
-    .icon-hover:hover {
-      color: #ffc107 !important;
-    }
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    aside {
-      background-color: #f8f9fa;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    .feature-icon {
-      font-size: 2rem;
-      color: #003366;
-      margin-bottom: 10px;
-    }
+/* Evita el desbordamiento horizontal en todo el documento */
+body {
+  overflow-x: hidden;
+}
+
+/* Asegura que los contenedores no se desborden */
+.container {
+  max-width: 100%;
+}
+
+/* Elimina márgenes y paddings no deseados en el contenedor principal */
+main {
+  margin: 0;
+  padding: 0;
+}
+
+/* Asegura que las imágenes y videos se ajusten correctamente dentro de sus contenedores */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Asegura que los elementos de la barra de navegación no causen desbordamiento */
+nav {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Asegura que los elementos del aside no causen desbordamiento */
+aside {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Asegura que las secciones no causen desbordamiento */
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Asegura que las filas y columnas de Bootstrap no causen desbordamiento */
+.row, .col-md-4 {
+  margin: 0;
+  padding: 0;
+}

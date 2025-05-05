@@ -5,6 +5,9 @@ body {
   background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* Degradado estándar */
   font-family: Arial, sans-serif; /* Fuente predeterminada */
   font-size: 14px; /* Reducir el tamaño de la fuente base */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina los paddings predeterminados */
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /* Estilo de los párrafos */
@@ -102,6 +105,7 @@ p {
   border: none; /* Elimina el borde */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para dar profundidad */
   transition: transform 0.3s; /* Añade una transición suave */
+  max-width: 100%; /* Asegura que las tarjetas no se desborden */
 }
 
 /* Estilo de las tarjetas al pasar el cursor */
@@ -122,18 +126,37 @@ p {
 .cta-button:hover {
   background-color: #002244; /* Cambia el color de fondo */
 }
-/*estilo img Team*/
+
+/* Estilo de las imágenes en las tarjetas */
 .card-img-top {
   width: 300px !important;
   height: 300px !important;
   object-fit: cover; /* Para mantener la proporción y evitar deformaciones */
 }
+
+/* Estilo para el contenedor de la imagen */
+.image-container {
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  height: 100%; /* Asegura que el contenedor ocupe todo el alto disponible */
+}
+
+/* Estilo para la imagen dentro del contenedor */
+.image-container img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra todo el área del contenedor */
+}
+
 /* Estilo del aside */
 aside {
   background-color: #f8f9fa; /* Color de fondo */
   padding: 20px; /* Espacio interno */
   border-radius: 10px; /* Redondea las esquinas */
   margin-top: 20px; /* Espacio encima del aside */
+  max-width: 100%; /* Asegura que el aside no se desborde */
+  box-sizing: border-box; /* Incluye el padding y border en el ancho total */
 }
 
 /* Estilo del footer */
@@ -157,5 +180,4 @@ footer {
   color: #090908; /* Cambia el color del icono */
   transform: scale(1.1); /* Aumenta el tamaño del icono */
 }
-
 
