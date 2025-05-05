@@ -11,6 +11,40 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
+<!-- Modal para detalle del servicio -->
+<div class="modal fade" id="servicioModal" tabindex="-1" aria-labelledby="servicioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="servicioModalLabel">Detalle del Servicio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img id="modalImagen" src="" alt="Imagen del servicio" class="img-fluid rounded">
+              <div class="mt-2">
+                <img src="imagenes/restaurante2.jpg" alt="extra 1" class="img-thumbnail me-2" width="80">
+                <img src="imagenes/restaurante3.jpg" alt="extra 2" class="img-thumbnail" width="80">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 id="modalTitulo">Título del Servicio</h4>
+              <p id="modalDescripcion">Descripción detallada del servicio.</p>
+              <p><strong>Ubicación:</strong> Timbío, Cauca</p>
+              <p><strong>Contacto:</strong> +57 320 123 4567</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="#" class="btn btn-primary">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 <body>
 
 <!-- Barra de Navegación -->
@@ -40,11 +74,11 @@
   <div id="cards-container" class="row row-cols-1 row-cols-md-3 g-4">
       <!-- Tarjeta 1 -->
       <div class="col">
-          <div class="card h-100">
-              <img src="" class="card-img-top" alt="Servicio 1">
+          <div class="card h-100" onclick="mostrarDetalle()">
+              <img src="imagenes/restaurante.jpg" alt="Servicio 1">
               <div class="card-body">
-                  <h5 class="card-title">Servicio 1</h5>
-                  <p class="card-text">Descripción del servicio 1.</p>
+                  <h5 class="card-title">Restaurante launch</h5>
+                  <p class="card-text">Ofrecemos comidas para eventos y almuerzos diarios, tenemos domicilio a todo el municipio de timbio</p>
               </div>
               <div class="card-footer">
                   <a href="#" class="btn btn-primary">Ingresar</a>
@@ -54,10 +88,10 @@
       <!-- Tarjeta 2 -->
       <div class="col">
           <div class="card h-100">
-              <img src="" class="card-img-top" alt="Servicio 2">
+              <img src="imagenes/Hotel.jpg"  alt="Servicio 2">
               <div class="card-body">
-                  <h5 class="card-title">Servicio 2</h5>
-                  <p class="card-text">Descripción del servicio 2.</p>
+                  <h5 class="card-title">Hotel Paradise</h5>
+                  <p class="card-text">Hospedaje cómodo y accesible, a pocos metros de la plaza central</p>
               </div>
               <div class="card-footer">
                   <a href="#" class="btn btn-primary">Ingresar</a>
@@ -67,10 +101,10 @@
       <!-- Tarjeta 3 -->
       <div class="col">
           <div class="card h-100">
-              <img src="" class="card-img-top" alt="Servicio 3">
+              <img src="imagenes/drogueria1.jpg"  alt="Servicio 3">
               <div class="card-body">
-                  <h5 class="card-title">Servicio 3</h5>
-                  <p class="card-text">Descripción del servicio 3.</p>
+                  <h5 class="card-title">Drogueria Timbio</h5>
+                  <p class="card-text">Te ofrecemos domicilio a todo Timbio las 24 horas</p>
               </div>
               <div class="card-footer">
                   <a href="#" class="btn btn-primary">Ingresar</a>
