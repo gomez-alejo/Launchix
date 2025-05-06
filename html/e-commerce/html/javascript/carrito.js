@@ -1,52 +1,45 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Se seleccionan los elementos donde se mostrarán los productos del carrito y el total
-    const cartItemsContainer = document.getElementById("cart-items");
-    const totalItemsEl = document.getElementById("total-items");
-    const totalPriceEl = document.getElementById("total-price");
+document.addEventListener("DOMContentLoaded", () => {
+    // Cargar el carrito desde localStorage
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Cargar productos desde el localStorage (almacenados previamente)
-    const carrito = JSON.parse(localStorage.getItem("carrito")) || []; // Si no hay productos en el carrito, se inicia con un arreglo vacío
+    function mostrarCarrito() {
+        const cartItems = document.getElementById('cart-items');
+        cartItems.innerHTML = '';
 
-    // Variables para llevar el conteo de los artículos y el precio total
-    let totalItems = 0;
-    let totalPrice = 0;
-
-    // Si el carrito está vacío, se muestra un mensaje en la interfaz
-    if (carrito.length === 0) {
-    cartItemsContainer.innerHTML = `<div class="alert alert-info">Tu carrito está vacío </div>`;
-    } else {
-      // Si hay productos, se iteran y se generan los elementos HTML para cada producto
-    carrito.forEach((producto, index) => {
-        // Calculamos el subtotal de cada producto (precio por cantidad)
-        const subtotal = producto.precio * producto.cantidad;
-        // Sumamos los totales de artículos y precio
-        totalItems += producto.cantidad;
-        totalPrice += subtotal;
-
-        // Se crea el HTML para mostrar el producto en el carrito
-        const itemHTML = `
-        <div class="card mb-3">
-            <div class="row g-0">
-            <div class="col-md-4">
-                <img src="${producto.imagen}" class="img-fluid rounded-start" alt="${producto.nombre}">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h5 class="card-title">${producto.nombre}</h5>
-                <p class="card-text">Cantidad: ${producto.cantidad}</p>
-                <p class="card-text"><strong>Precio: $${producto.precio.toLocaleString()}</strong></p>
-                <p class="card-text text-end"><small class="text-muted">Subtotal: $${subtotal.toLocaleString()}</small></p>
+        cart.forEach((item, index) => {
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item', 'd-flex', 'align-items-center', 'mb-3');
+            cartItem.innerHTML = `
+                <img src="${item.imagen}" alt="${item.titulo}" class="me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                <div class="flex-grow-1">
+                    <h5>${item.titulo}</h5>
+                    <p>$${item.precio.toLocaleString()}</p>
                 </div>
-            </div>
-            </div>
-        </div>
-        `;
-        // Se añade el HTML del producto al contenedor de productos del carrito
-        cartItemsContainer.innerHTML += itemHTML;
-    });
+                <button class="btn btn-danger btn-sm remove-from-cart" data-index="${index}">
+                    <i class="fas fa-trash"></i>
+                </button>
+            `;
+            cartItems.appendChild(cartItem);
+        });
+
+        // Actualizar el resumen del carrito
+        document.getElementById('total-items').textContent = cart.length;
+        const totalPrice = cart.reduce((total, item) => total + item.precio, 0);
+        document.getElementById('total-price').textContent = `$${totalPrice.toLocaleString()}`;
     }
 
-    // Se actualizan los elementos de total de artículos y total de precio en la interfaz
-    totalItemsEl.textContent = totalItems;
-    totalPriceEl.textContent = `$${totalPrice.toLocaleString()}`;
+    function eliminarProducto(index) {
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        mostrarCarrito();
+    }
+
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('remove-from-cart')) {
+            const index = e.target.getAttribute('data-index');
+            eliminarProducto(index);
+        }
+    });
+
+    mostrarCarrito();
 });
