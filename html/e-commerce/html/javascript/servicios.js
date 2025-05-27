@@ -143,8 +143,115 @@ document.addEventListener("DOMContentLoaded", () => {
             ubicacion: "Timbío, Cauca",
             contacto: "+57 323 222 3344",
             categoria: "droguerias"
+        },
+        {
+            titulo: "Cafetería Aroma",
+            descripcion: "Café de especialidad y ambiente acogedor para trabajar o relajarse.",
+            imagenes: [
+                "https://example.com/aroma1.jpg",
+                "https://example.com/aroma2.jpg",
+                "https://example.com/aroma3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 324 333 4455",
+            categoria: "cafeterias"
+        },
+        {
+            titulo: "Gimnasio Fitness",
+            descripcion: "Equipamiento moderno y clases dirigidas para mantenerte en forma.",
+            imagenes: [
+                "https://example.com/fitness1.jpg",
+                "https://example.com/fitness2.jpg",
+                "https://example.com/fitness3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 325 444 5566",
+            categoria: "gimnasios"
+        },
+        {
+            titulo: "Librería Mundo",
+            descripcion: "Libros de todos los géneros y artículos de papelería.",
+            imagenes: [
+                "https://example.com/libro1.jpg",
+                "https://example.com/libro2.jpg",
+                "https://example.com/libro3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 326 555 6677",
+            categoria: "librerias"
+        },
+        {
+            titulo: "Floristería Primavera",
+            descripcion: "Arreglos florales para todas las ocasiones y entrega a domicilio.",
+            imagenes: [
+                "https://example.com/flor1.jpg",
+                "https://example.com/flor2.jpg",
+                "https://example.com/flor3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 327 666 7788",
+            categoria: "floristerias"
+        },
+        {
+            titulo: "Panadería Delicias",
+            descripcion: "Pan fresco, pasteles y repostería fina hecha diariamente.",
+            imagenes: [
+                "https://example.com/pan1.jpg",
+                "https://example.com/pan2.jpg",
+                "https://example.com/pan3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 328 777 8899",
+            categoria: "panaderias"
+        },
+        {
+            titulo: "Joyería Brillante",
+            descripcion: "Joyas de diseño y relojes de alta gama.",
+            imagenes: [
+                "https://example.com/joyeria1.jpg",
+                "https://example.com/joyeria2.jpg",
+                "https://example.com/joyeria3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 329 888 9900",
+            categoria: "joyerias"
+        },
+        {
+            titulo: "Óptica Visión",
+            descripcion: "Exámenes de la vista y venta de lentes y monturas.",
+            imagenes: [
+                "https://example.com/optica1.jpg",
+                "https://example.com/optica2.jpg",
+                "https://example.com/optica3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 330 999 0011",
+            categoria: "opticas"
+        },
+        {
+            titulo: "Veterinaria Amigos",
+            descripcion: "Cuidado y atención médica para tus mascotas.",
+            imagenes: [
+                "https://example.com/veterinaria1.jpg",
+                "https://example.com/veterinaria2.jpg",
+                "https://example.com/veterinaria3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 331 111 2233",
+            categoria: "veterinarias"
+        },
+        {
+            titulo: "Taller Mecánico Rápido",
+            descripcion: "Reparación y mantenimiento de vehículos de todas las marcas.",
+            imagenes: [
+                "https://example.com/taller1.jpg",
+                "https://example.com/taller2.jpg",
+                "https://example.com/taller3.jpg"
+            ],
+            ubicacion: "Timbío, Cauca",
+            contacto: "+57 332 222 3344",
+            categoria: "talleres"
         }
-        // Puedes continuar agregando más...
     ];
 
     // Ordenar los servicios por título

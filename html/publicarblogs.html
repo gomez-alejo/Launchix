@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            margin-top: 30px;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="text-center">Crear Nuevo Blog</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="blogForm">
+                            <div class="form-group">
+                                <label for="blogTitle">Título del Blog</label>
+                                <input type="text" class="form-control" id="blogTitle" placeholder="Ingrese el título del blog" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="blogContent">Contenido del Blog</label>
+                                <textarea class="form-control" id="blogContent" rows="6" placeholder="Ingrese el contenido del blog" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="blogImage">Imagen del Blog</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="blogImage">
+                                    <label class="custom-file-label" for="blogImage">Seleccionar archivo</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="blogCategory">Categoría</label>
+                                <select class="form-control" id="blogCategory" required>
+                                    <option value="" disabled selected>Seleccione una categoría</option>
+                                    <option value="experiencia">Experiencia</option>
+                                    <option value="historia">Historia</option>
+                                    <option value="tecnologia">Tecnología</option>
+                                    <option value="viajes">Viajes</option>
+                                    <option value="cultura">Cultura</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Publicar Blog</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Script para mostrar el nombre del archivo seleccionado
+        $('.custom-file-input').on('change', function() {
+            let fileName = $(this).val().split('\\').pop();
+            $(this).next('.custom-file-label').addClass("selected").html(fileName);
+        });
+
+        document.getElementById('blogForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obtener los valores del formulario
+            const title = document.getElementById('blogTitle').value;
+            const content = document.getElementById('blogContent').value;
+            const image = document.getElementById('blogImage').files[0];
+            const category = document.getElementById('blogCategory').value;
+
+            // Aquí puedes añadir la lógica para enviar los datos del formulario al servidor
+            // Por ejemplo, utilizando fetch para hacer una solicitud POST
+            console.log('Título:', title);
+            console.log('Contenido:', content);
+            console.log('Imagen:', image);
+            console.log('Categoría:', category);
+
+            // Limpiar el formulario después de enviar
+            document.getElementById('blogForm').reset();
+            $('.custom-file-label').removeClass("selected").html("Seleccionar archivo");
+        });
+    </script>
+</body>
+</html>

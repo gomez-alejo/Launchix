@@ -1,61 +1,53 @@
-body {
+body, html {
+    height: 100%;
+    margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #003366, #0066cc);
+    background-color: #f8f9fa;
 }
-.login-container, .forgot-container, .register-container {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(15px);
-    color: white;
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
+
+.container {
+    height: 100%;
 }
-.login-container h2, .forgot-container h2, .register-container h2 {
-    margin-bottom: 20px;
+
+.card.custom-border {
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.login-container input, .forgot-container input, .register-container input {
+
+.card-body {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control.custom-border {
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.img-fluid {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-}
-.login-container input::placeholder, .forgot-container input::placeholder, .register-container input::placeholder {
-    color: #eee;
-}
-.login-container button, .forgot-container button, .register-container button {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(to right, #0044cc, #0088ff);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 15px;
-    font-size: 16px;
-}
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
-}
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
-    font-size: 22px;
-    color: white;
+    height: 100%;
+    object-fit: cover;
 }

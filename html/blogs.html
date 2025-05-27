@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Blogs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .blog-container {
+            margin-top: 30px;
+        }
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .rating {
+            display: inline-block;
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+        .rating > input {
+            display: none;
+        }
+        .rating > label {
+            display: inline-block;
+            font-size: 20px;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .rating > input:checked ~ label,
+        .rating > input:checked ~ label ~ label {
+            color: #ffc107;
+        }
+        .rating > label:hover,
+        .rating > label:hover ~ label {
+            color: #ffc107;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="search-container">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Buscar blogs..." id="searchInput">
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Categorías">
+                        <button type="button" class="btn btn-outline-primary" data-category="all">Todas</button>
+                        <button type="button" class="btn btn-outline-primary" data-category="experiencia">Experiencia</button>
+                        <button type="button" class="btn btn-outline-primary" data-category="historia">Historia</button>
+                        <button type="button" class="btn btn-outline-primary" data-category="tecnologia">Tecnología</button>
+                        <button type="button" class="btn btn-outline-primary" data-category="viajes">Viajes</button>
+                        <button type="button" class="btn btn-outline-primary" data-category="cultura">Cultura</button>
+                    </div>
+                </div>
+                <div class="row blog-container" id="blogContainer">
+                    <!-- Los blogs se cargarán aquí -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Imagen del blog">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Blog 1</h5>
+                                <p class="card-text">Resumen del Blog 1...</p>
+                                <span class="badge badge-primary">Experiencia</span>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#blogModal1">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Imagen del blog">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Blog 2</h5>
+                                <p class="card-text">Resumen del Blog 2...</p>
+                                <span class="badge badge-primary">Historia</span>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#blogModal2">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Imagen del blog">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Blog 3</h5>
+                                <p class="card-text">Resumen del Blog 3...</p>
+                                <span class="badge badge-primary">Tecnología</span>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#blogModal3">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Blog 1 -->
+    <div class="modal fade" id="blogModal1" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel1">Título del Blog 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contenido completo del Blog 1...</p>
+                    <div class="rating">
+                        <input type="radio" id="star5-1" name="rating-1" value="5" />
+                        <label for="star5-1">★</label>
+                        <input type="radio" id="star4-1" name="rating-1" value="4" />
+                        <label for="star4-1">★</label>
+                        <input type="radio" id="star3-1" name="rating-1" value="3" />
+                        <label for="star3-1">★</label>
+                        <input type="radio" id="star2-1" name="rating-1" value="2" />
+                        <label for="star2-1">★</label>
+                        <input type="radio" id="star1-1" name="rating-1" value="1" />
+                        <label for="star1-1">★</label>
+                    </div>
+                    <div class="comment-section">
+                        <textarea class="form-control" rows="2" placeholder="Añadir un comentario..."></textarea>
+                        <button class="btn btn-sm btn-primary mt-2">Comentar</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Blog 2 -->
+    <div class="modal fade" id="blogModal2" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel2">Título del Blog 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contenido completo del Blog 2...</p>
+                    <div class="rating">
+                        <input type="radio" id="star5-2" name="rating-2" value="5" />
+                        <label for="star5-2">★</label>
+                        <input type="radio" id="star4-2" name="rating-2" value="4" />
+                        <label for="star4-2">★</label>
+                        <input type="radio" id="star3-2" name="rating-2" value="3" />
+                        <label for="star3-2">★</label>
+                        <input type="radio" id="star2-2" name="rating-2" value="2" />
+                        <label for="star2-2">★</label>
+                        <input type="radio" id="star1-2" name="rating-2" value="1" />
+                        <label for="star1-2">★</label>
+                    </div>
+                    <div class="comment-section">
+                        <textarea class="form-control" rows="2" placeholder="Añadir un comentario..."></textarea>
+                        <button class="btn btn-sm btn-primary mt-2">Comentar</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Blog 3 -->
+    <div class="modal fade" id="blogModal3" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel3" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel3">Título del Blog 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contenido completo del Blog 3...</p>
+                    <div class="rating">
+                        <input type="radio" id="star5-3" name="rating-3" value="5" />
+                        <label for="star5-3">★</label>
+                        <input type="radio" id="star4-3" name="rating-3" value="4" />
+                        <label for="star4-3">★</label>
+                        <input type="radio" id="star3-3" name="rating-3" value="3" />
+                        <label for="star3-3">★</label>
+                        <input type="radio" id="star2-3" name="rating-3" value="2" />
+                        <label for="star2-3">★</label>
+                        <input type="radio" id="star1-3" name="rating-3" value="1" />
+                        <label for="star1-3">★</label>
+                    </div>
+                    <div class="comment-section">
+                        <textarea class="form-control" rows="2" placeholder="Añadir un comentario..."></textarea>
+                        <button class="btn btn-sm btn-primary mt-2">Comentar</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Función para filtrar blogs por categoría
+        $('.btn-group .btn').on('click', function() {
+            const category = $(this).data('category');
+            $('.blog-container .col-md-4').each(function() {
+                if (category === 'all' || $(this).find('.badge').text().toLowerCase() === category) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        // Función para buscar blogs en tiempo real
+        $('#searchInput').on('input', function() {
+            const searchTerm = $(this).val().toLowerCase();
+            $('.blog-container .col-md-4').each(function() {
+                const title = $(this).find('.card-title').text().toLowerCase();
+                const content = $(this).find('.card-text').text().toLowerCase();
+                if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        // Función para manejar el envío de comentarios
+        $('.comment-section button').on('click', function() {
+            const comment = $(this).siblings('textarea').val();
+            if (comment.trim() !== '') {
+                alert('Comentario enviado: ' + comment);
+                $(this).siblings('textarea').val('');
+            }
+        });
+    </script>
+</body>
+</html>
